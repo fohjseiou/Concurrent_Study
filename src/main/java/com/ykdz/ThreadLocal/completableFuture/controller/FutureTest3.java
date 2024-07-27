@@ -94,6 +94,7 @@ public class FutureTest3 {
 
         CompletableFuture<Void> future = CompletableFuture.allOf(a, b).whenComplete((m, throwable) -> {
             System.out.println("finish");
+            System.out.println("........");
         });
         System.out.println(future.get());
     }
